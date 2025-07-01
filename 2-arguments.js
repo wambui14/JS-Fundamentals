@@ -1,14 +1,9 @@
-const rectArea = function(length, width){
-  return length*width;
-};
+const args = process.argv.slice(2);
 
-let area = rectArea(5,6);
-console.log(area);
-
-if (rectArea.length=0){
-    console.log("No argument");
-}else if(rectArea.length=1){
-    console.log("Argument found");
-}else{
-    ("Arguments found");
+if (args.length === 0) {
+  console.log('No argument');
+} else if (args.length === 1) {
+  console.log('Argument found');
+} else {
+  console.log('Arguments found');
 }
